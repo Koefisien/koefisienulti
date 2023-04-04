@@ -1,0 +1,105 @@
+
+<form action="https://www.google.com/search" method="get">
+  <style type="text/css">
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.input-contain{
+    position: relative;
+
+}
+input {
+    height: 5rem;
+    width: 40rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    transform: scale (0,75);
+}
+input:focus{
+    outline: none;
+    border-color: teal;
+}
+input:focus + .placeholder-text .text, :not(input[value=""]) + .placeholder-text .text{
+    background-color: white;
+    font-size: 1.1rem;
+    color: black;
+    transform: translate(0, -170%);
+    transform: scale (0,75);
+}
+input:focus + .placeholder-text .text{
+    border-color: blueviolet;
+    color: blueviolet;
+}
+.placeholder-text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 3px solid transparent;
+    background-color: transparent;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+}
+.text{
+    font-size: 1.4rem;
+    padding: 0 0.5rem;
+    background-color: transparent;
+    transform: translate(0);
+    color: black;
+    transition: transform 0.15s ease-out, font-size 0.15s ease-out, background-color 0.2s ease-out, color 0.15s ease-out;
+}
+input, .placeholder-text{
+    font-size: 1.4rem;
+    padding: 0 1.2rem;
+}
+
+@media (max-width: 40rem) {
+    input{
+        width: 70vw;
+    }
+}
+font{
+      height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+ }
+ </style>
+
+  <!-- HTML code -->
+  
+  <font size="6">Ultimate</font><br>
+  <form action="https://www.google.com/search" method="GET">
+
+    <input type="text" name="q" placeholder="Telusuri Atau ketik URL">
+    
+
+    <div>
+
+    </div>
+  </form>
+
+
+
+
+
+</label>
+</div>
+</body>
+
+</div>
